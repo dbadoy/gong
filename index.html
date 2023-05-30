@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>gong</title>
+
+    <script>
+        function clearFn() {
+            let str = document.getElementById('text').value;
+            document.getElementById('result_txt').innerHTML = str.split('\n').join('');
+        }
+    </script>
+    
+</head>
+<body style="background-color:slategray">
+    <div style="text-align: center;">
+        <h1 style="font-size: 58px;">Clear Newline</h1> 
+        <br>
+        <div style="text-align: center;">
+            <div style="margin-left: 150px;">
+                <div style="float: left;">
+                    <textarea id="text" style="resize: none; width: 550px; height: 500px;border-radius: 3px;"></textarea>
+                    <br><br>
+                    <button onclick="clearFn()">clear</button>
+                </div>
+                <br>
+                <div id="result" style="float: left;">
+                    <p></p><br><br>
+                    <textarea id="result_txt" style="resize: none; width: 550px; height: 500px; border-radius: 3px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
